@@ -16,192 +16,227 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="W6C-iA7x4IElnuLnu8ySh86CkwFdyFoz0tzhYSvKzNQ"
+    />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="W6C-iA7x4IElnuLnu8ySh86CkwFdyFoz0tzhYSvKzNQ" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <!-- Put your site title here -->
+    <title>
+      Nazar Palamarchuk | A Front-End Developer based in Ukraine, Kyiv
+    </title>
 
-  <!-- Put your site title here -->
-  <title>
-    Nazar Palamarchuk | A Front-End Developer based in Ukraine, Kyiv
-  </title>
+    <meta
+      name="description"
+      content="I am a frontend developer interested in solving complex problems and finding effective solutions. I work with React, JavaScript, HTML, and CSS/SASS, and keep up with the latest trends in web development. Although I don't have direct experience as a frontend developer, I worked on important tasks in the Boeing team related to ensuring the safe use of airplanes and technical support for customers. This experience allowed me to develop communication and analytical skills necessary for effective teamwork and finding optimal solutions to tasks. I set high standards for myself and am always ready for challenges, which allows me to achieve maximum results in my work."
+    />
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta
+      name="keywords"
+      content="frontend development, React, JavaScript, HTML, CSS/SASS, web development, communication skills, analytical skills, teamwork"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <meta name="description" content="I am a frontend developer interested in solving complex problems and finding effective solutions. I work with React, JavaScript, HTML, and CSS/SASS, and keep up with the latest trends in web development. Although I don't have direct experience as a frontend developer, I worked on important tasks in the Boeing team related to ensuring the safe use of airplanes and technical support for customers. This experience allowed me to develop communication and analytical skills necessary for effective teamwork and finding optimal solutions to tasks. I set high standards for myself and am always ready for challenges, which allows me to achieve maximum results in my work.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="frontend development, React, JavaScript, HTML, CSS/SASS, web development, communication skills, analytical skills, teamwork" />
-  <link rel="stylesheet" href="index.css" />
-</head>
+  <body>
+    <!-- ***** Header ***** -->
 
-<body>
-
-  <!-- ***** Header ***** -->
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Nazar Palamarchuk</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Front-End / Full Stack Developer based in Ukraine, Kyiv
-</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
+    <header class="header" role="banner" id="top">
       <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <!-- Replace the following name with your name -->
+            <span>Nazar Palamarchuk</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <p>A Front-End / Full Stack Developer based in Ukraine, Kyiv</p>
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
+      </div>
+    </header>
 
-          <!-- Each div with the work__box class is a project. -->
+    <main role="main">
+      <!-- ***** Work ***** -->
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Watchlists</h3>
-              <p>
-                This website is an interactive platform for creating lists of favorite movies. Users can find their favorite movies, learn the most important information about them (rating, cast, duration, and more), and add movies to their watchlists. The Movie Database (TMDb) API is used to obtain information about movies.
-              </p>
-              <ul class="work__list">
-                <li>React (Router, Context, Query, ets)</li>
-                <li>Firebase (Auth, Cloud Firestore)</li>
-                <li>Feature-Sliced Design</li>
-                <li>CSS (SCSS)</li>
-                <li>React Hook Form + Zod Validation</li>
-                <li>TypeScript</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://watchlists-project.netlify.app/" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/NazPalUA/Watchlist" target="_blank">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My Work</h2>
+          <div class="work__boxes">
+            <!-- Breadly -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Breadly</h3>
+                <p>
+                  SaaS mobile application for tracking budgets and expenses with
+                  AI integration for receipt scanning and voice expense entry.
+                  Designed to be the first app on the market capable of
+                  automatically categorizing expenses from long receipts, saving
+                  users significant manual entry time. Currently in late
+                  development, preparing for early adopter release.
+                </p>
+                <ul class="work__list">
+                  <li>Expo, Expo Router, Expo API Routes</li>
+                  <li>React Native, TypeScript</li>
+                  <li>tRPC, Zod</li>
+                  <li>TanStack Query, Drizzle ORM</li>
+                  <li>PostgreSQL, SQLite, PowerSync</li>
+                  <li>Clerk Auth, AI SDK</li>
+                  <li>RevenueCat, Paddle</li>
+                </ul>
+                <div class="work__links">
+                  <!-- Replace with live link when ready -->
+                  <!-- <a href="#" target="_blank" class="link__text">
+                    Visit Site <span>&rarr;</span>
+                  </a> -->
+                  <!-- Replace with GitHub repo link -->
+                  <!-- <a href="#" target="_blank">
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      title="View Source Code"
+                      alt="GitHub"
+                    />
+                  </a> -->
+                </div>
+              </div>
+              <div class="work__image-box work__image-box--mobile">
+                <div class="work__device">
+                  <div class="work__device-screen">
+                    <img
+                      src="./images/breadly.png"
+                      class="work__image"
+                      alt="Breadly"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/watchlists.png" class="work__image" alt="Watchlists" />
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Evently</h3>
-              <p>
-                Evently is a modern event management platform that allows users to easily create, manage, and participate in events. The platform is designed with both event organizers and attendees in mind, providing a seamless experience from event creation to registration and participation.
-              </p>
-              <ul class="work__list">
-                <li>Next.js 14 (App router, Server actions, ets)</li>
-                <li>MongoDB (+mongoose)</li>
-                <li>Clerk Auth</li>
-                <li>Stripe</li>
-                <li>WebHooks</li>
-                <li>Feature-Sliced Design</li>
-                <li>Tailwind css and Shadcn</li>
-                <li>React Hook Form + Zod Validation</li>
-                <li>UploadThing</li>
-                <li>Responsive Design</li>
-                <li>TypeScript</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://evently.vercel.app/" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/NazPalUA/evently" target="_blank">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+            <!-- Timecraft -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Timecraft</h3>
+                <p>
+                  Fully functional SaaS application for tracking work time and
+                  measuring performance. Used daily by a small group of beta
+                  testers, helping them gain clear insights into how time is
+                  distributed across projects. Supports Ukrainian, Russian, and
+                  English. Preparing to integrate payment features.
+                </p>
+                <ul class="work__list">
+                  <li>React 19 / Next.js 15</li>
+                  <li>
+                    App Router, Route Handlers, Server Actions, Server
+                    Components, PPR
+                  </li>
+                  <li>TanStack Query & Tables</li>
+                  <li>TailwindCSS, Shadcn</li>
+                  <li>PostgreSQL (+Drizzle)</li>
+                  <li>Clerk Auth, TypeScript</li>
+                </ul>
+                <div class="work__links">
+                  <a
+                    href="https://timecraftapp.com"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <!-- Replace with GitHub repo link -->
+                  <!-- <a href="#" target="_blank">
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      title="View Source Code"
+                      alt="GitHub"
+                    />
+                  </a> -->
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/timecraft.png"
+                  class="work__image"
+                  alt="Timecraft"
+                />
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/evently.png" class="work__image" alt="Evently" />
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Firestock</h3>
-              <p>
-                This web application is an interactive platform for managing and viewing a gallery of images. Users can upload their own images, view images uploaded by others, and manage their own gallery. The application uses Firebase for user authentication, Firestore for database queries, and Firebase storage for storing user-generated content. The application is built with TypeScript and React, and styled with SCSS. It follows best practices for code quality with ESLint and Prettier.
-              </p>
-              <ul class="work__list">
-                <li>React, React-Router</li>
-                <li>React Bootstrap, Styled Components, CSS (SASS)</li>
-                <li>TypeScript</li>
-                <li>React Hook Form, Zod, React Dropzone </li>
-                <li>Firebase (Authentication, Firestore, Storage)</li>
-                <li>Zustand, React Query</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://gallery-317d7.web.app/" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/NazPalUA/Firestock" target="_blank">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+            <!-- Workineuro -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Workineuro</h3>
+                <p>
+                  Platform helping Ukrainians find employment in the EU,
+                  featuring a custom CMS with static generation and automatic
+                  rebuilds. Integrated with Telegram Messenger for automated job
+                  posting and instant application notifications.
+                </p>
+                <ul class="work__list">
+                  <li>React 19 / Next.js 15</li>
+                  <li>SSR, SSG</li>
+                  <li>TanStack Query & Tables</li>
+                  <li>TailwindCSS, Shadcn</li>
+                  <li>MongoDB (+Mongoose)</li>
+                  <li>Clerk Auth, TypeScript</li>
+                </ul>
+                <div class="work__links">
+                  <a
+                    href="https://workineuro.com"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit Site <span>&rarr;</span>
+                  </a>
+                  <!-- Replace with GitHub repo link -->
+                  <!-- <a href="#" target="_blank">
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      title="View Source Code"
+                      alt="GitHub"
+                    />
+                  </a> -->
+                </div>
               </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/firestock.png" class="work__image" alt="Firestock" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Meme Generator</h3>
-              <p>
-                This website is a meme generator that allows you to create your own memes using images and text. The site offers several meme templates that you can use, or you can upload your own image. After selecting an image, you can add text to it using various fonts, colors, and other features. Once you have created your meme, you can save it to your device and share it with your friends.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS (SASS)</li>
-                <li>JavaScript</li>
-                <li>React (Router, Context, ets)</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://super-meme-generator.netlify.app/" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/NazPalUA/Meme-Generator" target="_blank">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+              <div class="work__image-box">
+                <img
+                  src="./images/workineuro.png"
+                  class="work__image"
+                  alt="Workineuro"
+                />
               </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/meme-generator.png" class="work__image" alt="Meme Generator" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ***** Clients ***** -->
-<!-- 
+      <!-- ***** Clients ***** -->
+      <!-- 
     <section class="client" id="clients">
       <div class="row">
         <h2>Clients</h2>
@@ -216,80 +251,115 @@
       </div>
     </section> -->
 
-    <!-- ***** About ***** -->
+      <!-- ***** About ***** -->
 
-    <section class="about" id="about">
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <p>
+                I'm a Full Stack Web, Mobile, and AI Developer based in Kyiv,
+                Ukraine. I love building applications that solve real-world
+                problems and are delightful to use. My specialities include
+                React, Next.js, React Native, TypeScript, and integrating AI
+                features into both web and mobile apps.
+              </p>
+              <p>
+                I have over four years of experience as a Stress Engineer at
+                Boeing, working on the 737 NG and 737 MAX programs in a global
+                team spread across Poland, India, the United States, and
+                Australia. This role taught me strong
+                <strong>presentation</strong> and
+                <strong>communication</strong> skills, effective collaboration
+                in an international environment, and how to deliver high-quality
+                work under <strong>tight deadlines</strong> and
+                <strong>high-pressure conditions</strong>.
+              </p>
+              <p>
+                In addition to my engineering career, I actively develop SaaS
+                products, from concept and design to production deployment, with
+                a strong focus on type safety, scalability, and user experience.
+              </p>
+              <!-- Provide a link to your resume -->
+              <a href="Resume.pdf" class="btn" target="_blank">My Resume</a>
+            </div>
+
+            <div class="about__photo-container">
+              <!-- Add a nice photo of yourself -->
+              <img class="about__photo" src="./images/nazar.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ***** Contact ***** -->
+
+    <section class="contact" id="contact">
       <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-           I'm a web developer based out of Ukraine, Kyiv. I love building apps that solve real-world problems, and that are delightful to use. My specialities include React, JavaScript, CSS, and HTML.</p>
-            <p>I worked for two years at Boeing as an aerospace engineer (self-taught, specializing in aircraft structural analysis), and I have a Bachelor's degree in Applied Mechanics. </p>
-            <!-- Provide a link to your resume -->
-            <a href="Resume.pdf" class="btn" target="_blank">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/nazar.jpg" alt="" />
-          </div>
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            Are you looking for a fast-performing and user-friendly website to
+            represent your product or business? or looking for any kind of
+            consultation? or want to ask questions? or have some advice for me
+            or just want to say "Hi 👋" in any case feel free to Let me know. I
+            will do my best to respond back. 😊 The quickest way to reach out to
+            me is via an email.
+          </p>
+          <!-- Replace the email with yours -->
+          <a href="mailto:ua.nazar.palamarchuk.ua@gmail.com" class="btn"
+            >ua.nazar.palamarchuk.ua@gmail.com</a
+          >
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- ***** Contact ***** -->
+    <!-- ***** Footer ***** -->
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:ua.nazar.palamarchuk.ua@gmail.com" class="btn">ua.nazar.palamarchuk.ua@gmail.com</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <!-- <li class="footer__social-link-item">
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <!-- Update the links to point to your accounts -->
+        <ul class="footer__social-links">
+          <!-- <li class="footer__social-link-item">
           <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile" target="_blank">
             <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
           </a>
         </li> -->
-        <li class="footer__social-link-item">
-          <a href="https://github.com/NazPalUA/" title="Link to Github Profile" target="_blank">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <!-- <li class="footer__social-link-item">
+          <li class="footer__social-link-item">
+            <a
+              href="https://github.com/nazar-pal"
+              title="Link to Github Profile"
+              target="_blank"
+            >
+              <img
+                src="./images/github.svg"
+                class="footer__social-image"
+                alt="Github"
+              />
+            </a>
+          </li>
+          <!-- <li class="footer__social-link-item">
           <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile" target="_blank">
             <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
           </a>
         </li> -->
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/" target="_blank">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/naz-pal/" target="_blank">
+              <img
+                src="./images/linkedin.svg"
+                title="Link to Linkedin Profile"
+                class="footer__social-image"
+                alt="Linkedin"
+              />
+            </a>
+          </li>
+        </ul>
 
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      
-      <!-- <p>
+        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+
+        <!-- <p>
         &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
       </p>
       
@@ -300,13 +370,16 @@
         </iframe>
       </div>
        -->
-    </div>
-  </footer>
+      </div>
+    </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
-
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+    <script src="./index.js"></script>
+  </body>
 </html>
